@@ -1,5 +1,4 @@
 @bgColorDefault: var(--background-color-secondary);
-@bgColorNew: #e9f9ff;
 @colorUnread: var(--info);
 
 @radius: 10px;
@@ -26,23 +25,6 @@
     .semiBold;
   }
 
-  .dropdown-footer {
-    .btn.btn-default {
-      border: 1px solid var(--default);
-      box-shadow: none;
-
-      &:hover {
-        border-color: var(--background3);
-        background: var(--background3);
-      }
-
-      &:active {
-        border-color: var(--text-color-secondary);
-        background: #FFF;
-      }
-    }
-  }
-
   &.dropdown-menu {
     li {
       a {
@@ -61,12 +43,6 @@
     .ProseMirror {
       min-height: 100px !important;
     }
-  }
-}
-
-.media-list {
-  li.new {
-    background-color: @bgColorNew;
   }
 }
 
@@ -346,7 +322,7 @@
     }
 
     .author-image {
-      img {
+      a {
         visibility: hidden;
         margin-top: 0;
       }
